@@ -1,2 +1,2 @@
 #!/bin/bash
-grep usr /etc/passwd | sort -d
+cut -f 1,6 -d : | sort
