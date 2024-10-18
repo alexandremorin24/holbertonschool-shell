@@ -1,2 +1,4 @@
 #!/bin/bash
-LC_ALL=C find . -type f -name "*.gif" | rev | cut -d '.' -f 2- | rev | sort -f
+#!/bin/bash
+LC_ALL=C find . -type f -name "*.gif" | rev | cut -d '/' -f 1 | cut -d '.' -f 1 | sort -f
+
